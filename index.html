@@ -3,39 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aid to Chain - Procurement and Supply Chain Solutions</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Aid to Chain</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .hero-section {
-            padding: 4rem 0;
-            background-color: #f8f9fa;
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Aid to Chain</a>
+<body class="bg-white">
+    <!-- Header with Logo -->
+    <header class="border-b">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <h1 class="text-3xl font-bold">
+                        <span class="text-green-800">AID</span>
+                        <span class="text-green-600">TO</span>
+                        <span class="text-green-800">CHAIN</span>
+                    </h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-green-800">HOME</a>
+                    <a href="#solutions" class="text-gray-700 hover:text-green-800">SOLUTIONS</a>
+                    <a href="#industries" class="text-gray-700 hover:text-green-800">INDUSTRIES</a>
+                    <a href="#partners" class="text-gray-700 hover:text-green-800">PARTNERS</a>
+                    <a href="#insights" class="text-gray-700 hover:text-green-800">INSIGHTS</a>
+                    <a href="#contact" class="text-gray-700 hover:text-green-800">CONTACT</a>
+                </nav>
+            </div>
         </div>
-    </nav>
+    </header>
 
-    <div class="hero-section">
-        <div class="container">
-            <h1>Welcome to Aid to Chain</h1>
-            <p class="lead">Procurement and Supply Chain Solutions and Services</p>
-        </div>
-    </div>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-white py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="bg-green-700 text-white rounded-lg p-12 mb-12">
+                    <h2 class="text-3xl font-bold mb-4">
+                        We help companies to build flexible and sustainable supply chains
+                    </h2>
+                    <p class="text-xl">
+                        Specialized in Oil & Gas E&P supply chain optimization
+                    </p>
+                </div>
 
-    <main class="container my-5">
-        <!-- Your main content will go here -->
+                <!-- Key Features -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-green-600 text-white rounded-lg p-8">
+                        <h3 class="text-xl font-semibold mb-4">Industry Expertise</h3>
+                        <p>Deep understanding of E&P dynamics: Operators, Services, Unions, Provinces, Chambers, Labor Risk, Legal and Tax Framework.</p>
+                    </div>
+                    <div class="bg-green-800 text-white rounded-lg p-8">
+                        <h3 class="text-xl font-semibold mb-4">Our Focus</h3>
+                        <p>From consulting to implementation and outsourcing - We help improve efficiency, increase resilience, and reduce costs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Section -->
+        <section class="bg-gray-50 py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-green-800 mb-12">Our Solutions</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Operational Outsourcing -->
+                    <div class="bg-green-600 text-white rounded-lg p-8">
+                        <h3 class="text-xl font-semibold mb-4">Operational Outsourcing</h3>
+                        <ul class="space-y-3">
+                            <li>• Monitoring, expediting, supplier evaluation</li>
+                            <li>• Complex tender execution</li>
+                            <li>• Procurement and contracting outsourcing</li>
+                        </ul>
+                    </div>
+
+                    <!-- Efficiency & Cost Reduction -->
+                    <div class="bg-green-700 text-white rounded-lg p-8">
+                        <h3 class="text-xl font-semibold mb-4">Efficiency & Cost Reduction</h3>
+                        <ul class="space-y-3">
+                            <li>• Short and medium-term cost programs</li>
+                            <li>• Resource efficiency - transactional reduction</li>
+                            <li>• Process optimization, eProcurement and ERP</li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Analytics -->
+                    <div class="bg-green-800 text-white rounded-lg p-8">
+                        <h3 class="text-xl font-semibold mb-4">Data Analytics</h3>
+                        <ul class="space-y-3">
+                            <li>• Transaction and spend analysis</li>
+                            <li>• Market analysis - benchmarking</li>
+                            <li>• Demand, supply and operational planning</li>
+                        </ul>
+                    </div>
+
+                    <!-- Strategic Support -->
+                    <div class="bg-green-900 text-white rounded-lg p-8">
+                        <h3 class="text-xl font-semibold mb-4">Strategic Support</h3>
+                        <ul class="space-y-3">
+                            <li>• Strategic Assessment - Supply Plan</li>
+                            <li>• Risk Management - Supply Chain</li>
+                            <li>• Category Management - Contract Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="bg-white py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="bg-green-700 text-white rounded-lg p-12 text-center">
+                    <h2 class="text-3xl font-bold mb-6">Need to optimize results and reduce Supply Chain risk?</h2>
+                    <p class="text-xl mb-8">Let's schedule a 30-minute video call to explore concrete opportunities</p>
+                    <div class="space-y-4">
+                        <p>Email: <a href="mailto:mfunes@aidtochain.com" class="underline">mfunes@aidtochain.com</a></p>
+                        <p>WhatsApp: <a href="https://wa.me/1167414371" class="underline">+54 11 6741-4371</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-light py-4 mt-5">
-        <div class="container">
-            <p class="text-center mb-0">© 2024 Aid to Chain. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-6xl mx-auto px-6">
+            <p class="text-center">Copyright © 2024 Aid To Chain - All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
