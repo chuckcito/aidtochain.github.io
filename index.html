@@ -4,134 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aid to Chain</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+        
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Lato', sans-serif;
+            color: #333;
+        }
+        
+        .section-title {
+            color: #8B9D8C;
+            font-size: 2.5rem;
+            font-weight: 300;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .content-text {
+            color: #555;
+            line-height: 1.6;
         }
     </style>
 </head>
-<body class="bg-white">
-    <!-- Header with Logo -->
-    <header class="border-b">
-        <div class="max-w-6xl mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-2">
-                    <h1 class="text-3xl font-bold">
-                        <span class="text-green-800">AID</span>
-                        <span class="text-green-600">TO</span>
-                        <span class="text-green-800">CHAIN</span>
-                    </h1>
-                </div>
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-green-800">HOME</a>
-                    <a href="#solutions" class="text-gray-700 hover:text-green-800">SOLUTIONS</a>
-                    <a href="#industries" class="text-gray-700 hover:text-green-800">INDUSTRIES</a>
-                    <a href="#partners" class="text-gray-700 hover:text-green-800">PARTNERS</a>
-                    <a href="#insights" class="text-gray-700 hover:text-green-800">INSIGHTS</a>
-                    <a href="#contact" class="text-gray-700 hover:text-green-800">CONTACT</a>
-                </nav>
-            </div>
+<body>
+    <!-- Logo only in header -->
+    <header class="fixed top-0 w-full bg-white z-50">
+        <div class="container mx-auto px-6 py-4">
+            <img src="/api/placeholder/150/50" alt="Aid to Chain Logo" class="h-8">
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="bg-white py-16">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="bg-green-700 text-white rounded-lg p-12 mb-12">
-                    <h2 class="text-3xl font-bold mb-4">
-                        We help companies to build flexible and sustainable supply chains
-                    </h2>
-                    <p class="text-xl">
-                        Specialized in Oil & Gas E&P supply chain optimization
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-light text-gray-600 mb-12">
+                We help companies to build flexible and<br>
+                sustainable supply chains
+            </h1>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Aid to Chain</h2>
+            <div class="max-w-4xl mx-auto">
+                <p class="content-text">
+                    We have industry-specific knowledge and focus in the Oil & Gas industry where our clients face unique supply chain challenges.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Services</h2>
+            
+            <!-- Original Services -->
+            <div class="mb-20">
+                <h3 class="text-2xl font-light mb-6">Supplier Performance Evaluation</h3>
+                <p class="content-text">
+                    Evaluation of current and potential suppliers against business requirements, using a structured and data-driven approach. Our process includes a holistic analysis of supplier capabilities, quality management, financial stability, delivery performance, and social responsibility, among other factors.
+                </p>
+            </div>
+
+            <div class="mb-20">
+                <h3 class="text-2xl font-light mb-6">Supply Chain Risk Assessment</h3>
+                <p class="content-text">
+                    We offer a Supply Chain Risk Assessment service, which evaluate both business as usual and external events risks. We analyze potential disruptions to your supply chain, such as natural disasters, political instability, or pandemics, and evaluate how your supply chain would respond to these events.
+                </p>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="mb-20">
+                <h3 class="text-2xl font-light mb-6">Operational Outsourcing</h3>
+                <p class="content-text">
+                    Our operational outsourcing services include follow-up, expediting, and supplier evaluation. We execute complex tenders and provide outsourcing of purchases and contracts to optimize your operational processes.
+                </p>
+            </div>
+
+            <div class="mb-20">
+                <h3 class="text-2xl font-light mb-6">Efficiency & Cost Reduction</h3>
+                <p class="content-text">
+                    We implement short and medium term cost reduction programs while focusing on resource efficiency and transactional reduction. Our approach includes process optimization, eProcurement and ERP implementation to enhance overall efficiency.
+                </p>
+            </div>
+
+            <div class="mb-20">
+                <h3 class="text-2xl font-light mb-6">Data Analytics</h3>
+                <p class="content-text">
+                    Our data analytics service provides comprehensive transaction and spend analysis, along with market analysis and benchmarking. We help you understand and optimize demand, supply and operational planning through data-driven insights.
+                </p>
+            </div>
+
+            <div class="mb-20">
+                <h3 class="text-2xl font-light mb-6">Strategic Support & Implementation</h3>
+                <p class="content-text">
+                    We provide strategic evaluation and supply planning services, combined with comprehensive risk management for your supply chain. Our expertise extends to category management and contract management to ensure strategic implementation success.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oil & Gas Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Oil & Gas</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
+                <div>
+                    <p class="content-text mb-6">
+                        The Oil and Gas industry is conditioned by volatility and complex supply chains. Goods and Services can easily flip from Buyer to Supplier market. Our Category Management approach helps to optimize spend across categories, including services, equipment, spare parts, production materials, and transportation. We have extensive experience negotiating contracts framework and identifying cost savings opportunities.
                     </p>
                 </div>
-
-                <!-- Key Features -->
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-green-600 text-white rounded-lg p-8">
-                        <h3 class="text-xl font-semibold mb-4">Industry Expertise</h3>
-                        <p>Deep understanding of E&P dynamics: Operators, Services, Unions, Provinces, Chambers, Labor Risk, Legal and Tax Framework.</p>
-                    </div>
-                    <div class="bg-green-800 text-white rounded-lg p-8">
-                        <h3 class="text-xl font-semibold mb-4">Our Focus</h3>
-                        <p>From consulting to implementation and outsourcing - We help improve efficiency, increase resilience, and reduce costs.</p>
-                    </div>
+                <div>
+                    <img src="/api/placeholder/400/300" alt="Oil & Gas Industry" class="w-full">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Solutions Section -->
-        <section class="bg-gray-50 py-16">
-            <div class="max-w-6xl mx-auto px-6">
-                <h2 class="text-3xl font-bold text-green-800 mb-12">Our Solutions</h2>
-                
-                <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Operational Outsourcing -->
-                    <div class="bg-green-600 text-white rounded-lg p-8">
-                        <h3 class="text-xl font-semibold mb-4">Operational Outsourcing</h3>
-                        <ul class="space-y-3">
-                            <li>• Monitoring, expediting, supplier evaluation</li>
-                            <li>• Complex tender execution</li>
-                            <li>• Procurement and contracting outsourcing</li>
-                        </ul>
-                    </div>
-
-                    <!-- Efficiency & Cost Reduction -->
-                    <div class="bg-green-700 text-white rounded-lg p-8">
-                        <h3 class="text-xl font-semibold mb-4">Efficiency & Cost Reduction</h3>
-                        <ul class="space-y-3">
-                            <li>• Short and medium-term cost programs</li>
-                            <li>• Resource efficiency - transactional reduction</li>
-                            <li>• Process optimization, eProcurement and ERP</li>
-                        </ul>
-                    </div>
-
-                    <!-- Data Analytics -->
-                    <div class="bg-green-800 text-white rounded-lg p-8">
-                        <h3 class="text-xl font-semibold mb-4">Data Analytics</h3>
-                        <ul class="space-y-3">
-                            <li>• Transaction and spend analysis</li>
-                            <li>• Market analysis - benchmarking</li>
-                            <li>• Demand, supply and operational planning</li>
-                        </ul>
-                    </div>
-
-                    <!-- Strategic Support -->
-                    <div class="bg-green-900 text-white rounded-lg p-8">
-                        <h3 class="text-xl font-semibold mb-4">Strategic Support</h3>
-                        <ul class="space-y-3">
-                            <li>• Strategic Assessment - Supply Plan</li>
-                            <li>• Risk Management - Supply Chain</li>
-                            <li>• Category Management - Contract Management</li>
-                        </ul>
-                    </div>
+    <!-- Partners Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Partners</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                    <img src="/api/placeholder/200/200" alt="Mariano Funes" class="rounded-full w-48 h-48 mx-auto mb-6">
+                    <h3 class="text-xl font-semibold mb-4">Mariano Funes</h3>
+                    <p class="content-text">
+                        Mariano has expertise in Cost Reduction, Market Intelligence and Value Chain Analysis. With a strong technical background in Contracting & Procurement, Logistics, Warehousing, Foreign Trade, and Process Reengineering, has a proven track record of leading successful turnarounds in these areas. His executive experience was developed in Oil & Gas Regional positions across Latin America.
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section class="bg-white py-16">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="bg-green-700 text-white rounded-lg p-12 text-center">
-                    <h2 class="text-3xl font-bold mb-6">Need to optimize results and reduce Supply Chain risk?</h2>
-                    <p class="text-xl mb-8">Let's schedule a 30-minute video call to explore concrete opportunities</p>
-                    <div class="space-y-4">
-                        <p>Email: <a href="mailto:mfunes@aidtochain.com" class="underline">mfunes@aidtochain.com</a></p>
-                        <p>WhatsApp: <a href="https://wa.me/1167414371" class="underline">+54 11 6741-4371</a></p>
-                    </div>
-                </div>
+    <!-- Contact Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Contact</h2>
+            <div class="text-center">
+                <p class="content-text mb-4">email: info@aidtochain.com</p>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="max-w-6xl mx-auto px-6">
-            <p class="text-center">Copyright © 2024 Aid To Chain - All Rights Reserved.</p>
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm">Copyright © 2024 Aid To Chain - All Rights Reserved.</p>
         </div>
     </footer>
 </body>
